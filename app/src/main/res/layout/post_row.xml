@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pic"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_marginTop="9dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sample User Name"/>
+
+        <ImageView
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/three_dots"
+            android:id="@+id/threeDots" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/profile"
+        android:src="@drawable/pic"
+        android:layout_width="match_parent"
+        android:layout_height="360dp" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/heart"
+            android:id="@+id/like" />
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/comment"
+            android:id="@+id/comment" />
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/share"
+            android:id="@+id/share" />
+
+        <ImageView
+            android:layout_marginLeft="230dp"
+            android:layout_weight="2"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/save"
+            android:id="@+id/save" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="8,067 Likes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="status shows here"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="56 MINUTES AGO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
